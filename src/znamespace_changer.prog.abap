@@ -79,7 +79,7 @@ START-OF-SELECTION.
 
   lt_srcfiles = lo_repo->get_files_local( ii_log = lo_log ).
   IF lo_log->count( ) > 0.
-    lo_log->show( ).
+    zcl_abapgit_log_viewer=>show_log( lo_log ).
   ENDIF.
 
 * replace
